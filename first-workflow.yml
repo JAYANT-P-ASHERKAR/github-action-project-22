@@ -1,0 +1,17 @@
+name: multiple commands -1
+
+on: push
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: show date
+        run: date
+
+      - name: show current folder 
+        run: pwd
+     
+      - name: show files
+        run: ls -la
